@@ -1,5 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -7,6 +9,8 @@ body {
 }
 
 header {
+  font-weight: 400; /* Normal weight */
+  font-style: normal;
   background: #004080;
   color: white;
   padding: 1em;
@@ -18,10 +22,11 @@ nav {
 }
 
 nav a {
+  font-weight: 400;
+  font-style: normal;
   color: white;
   margin: 0 10px;
   text-decoration: none;
-  font-weight: bold;
 }
 
 nav a:hover {
@@ -29,10 +34,31 @@ nav a:hover {
 }
 
 main {
-  padding: 2em;
+  padding: 2em 1em; /* decent breathing room */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal center */
+}
+
+main h2 {
+  margin-top: 0.5em; /* small gap from header */
+}
+
+main p {
+  margin: 0.5em 0; /* consistent spacing between paragraphs */
+  max-width: 700px; /* keeps text readable on large screens */
+}
+.small-text {
+  font-size: 0.9em;       /* slightly smaller */
+  font-style: italic;     /* italic for citation style */
+  margin-top: 0.3em;      /* small gap from paragraph above */
+  color: #555;            /* softer gray tone */
 }
 
 footer {
+  font-weight: 400;
+  font-style: normal;
   background: #eee;
   text-align: center;
   padding: 1em;
