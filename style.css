@@ -63,4 +63,69 @@ footer {
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
+
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+.video-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+}
+
+.video-info {
+  padding: 12px;
+}
+
+.video-info .category {
+  display: inline-block;
+  background: #0073e6;
+  color: white;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.video-info .title {
+  font-size: 1rem;
+  margin: 8px 0 0;
+  color: #333;
+  font-family: 'DM Serif Text', serif;
 }
