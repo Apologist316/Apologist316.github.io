@@ -110,7 +110,7 @@ main {
 }
 
 .video-info {
-  margin-top: 0.5rem; /* reduce gap from thumbnail to text */
+  margin-top: 0.2rem; /* reduce gap from thumbnail to text */
 }
 
 .video-info .category {
