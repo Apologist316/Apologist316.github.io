@@ -63,7 +63,7 @@ footer {
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
-
+}
 
 nav {
   margin-top: 10px;
@@ -110,22 +110,19 @@ main {
 }
 
 .video-info {
-  padding: 12px;
+  margin-top: 0.5rem; /* reduce gap from thumbnail to text */
 }
 
 .video-info .category {
-  display: inline-block;
-  background: #0073e6;
-  color: white;
-  font-size: 0.8rem;
-  padding: 3px 8px;
-  border-radius: 6px;
-  margin-bottom: 6px;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem; /* reduce gap before the title */
+  color: #666;
 }
 
 .video-info .title {
+  margin: 0; /* removes default h3 margin */
   font-size: 1rem;
-  margin: 8px 0 0;
-  color: #333;
-  font-family: 'DM Serif Text', serif;
+  line-height: 1.3;
 }
