@@ -1,0 +1,169 @@
+/* 1. CSS Variables (Root Configuration) */
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f7f7f7;
+  --text-color: #2d3748;
+  --accent-color: #2b6cb0;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Variables from your main site's design */
+  --main-header-bg: #004080;
+  --main-footer-bg: #eee;
+  --main-header-text: white;
+}
+
+/* 2. General Body & Typography */
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.8;
+  color: var(--text-color);
+  background-color: var(--primary-bg);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 3. Main Site Header & Footer (from your CSS) */
+header {
+  background: var(--main-header-bg);
+  color: var(--main-header-text);
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: var(--main-header-text);
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: "DM Serif Text", serif;
+}
+
+footer {
+  background: var(--main-footer-bg);
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* 4. Article-Specific Layout */
+.article-container {
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+}
+
+.article-header {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+.article-header h1 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+}
+
+.article-header .subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: bold;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+/* 5. Article Components */
+.dedication blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 2em 0;
+  padding: 1.5em;
+  border-left: 4px solid var(--accent-color);
+  background-color: var(--secondary-bg);
+}
+
+.dedication footer {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 1em;
+  color: #555;
+  font-size: 1rem;
+}
+
+.toc {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin: 3rem 0;
+}
+
+.toc summary {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.toc h2 {
+  display: inline;
+  border-bottom: none;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.toc-content {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc li {
+  margin-bottom: 0.5rem;
+}
+
+.article-footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  background: none; /* Override main footer background */
+}
+
+.article-footer p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
