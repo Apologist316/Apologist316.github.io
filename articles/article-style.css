@@ -167,3 +167,30 @@ footer {
   margin: 0.25rem 0;
   font-size: 1rem;
 }
+
+details {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    background: #fafafa;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none; /* hide default arrow */
+}
+
+summary h2 {
+    display: inline-block;
+    margin: 0;
+}
+
+details[open] {
+    background: #f0f0f0;
+}
